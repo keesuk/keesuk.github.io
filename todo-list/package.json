@@ -6,9 +6,15 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "deck.gl": "^8.1.1",
+    "fibers": "^4.0.2",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-map-gl": "^5.2.3",
+    "react-scripts": "3.4.1",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
   }
 }
