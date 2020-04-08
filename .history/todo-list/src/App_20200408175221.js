@@ -18,7 +18,7 @@ export default function App() {
         setViewport(viewport);
       }}
     >
-      
+      markers here
     </ReactMapGL>
     </div>
   );
