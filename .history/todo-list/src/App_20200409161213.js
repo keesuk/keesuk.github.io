@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
+import Navigation from './Navigation';
 import * as Locations from './Locations';
 import Map from './Map';
 
@@ -20,7 +21,7 @@ const App = () => {
         viewState={viewState}
         onViewStateChange={handleChangeViewState}
       />
-      <div className="App">
+      <div className={styles.controls}>
         {Object.keys(Locations).map(key => {
           return (
             <button key={key} onClick={() => handleFlyTo(Locations[key])}>

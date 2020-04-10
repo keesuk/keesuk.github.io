@@ -20,7 +20,7 @@ const App = () => {
         viewState={viewState}
         onViewStateChange={handleChangeViewState}
       />
-      <div className="App">
+      <div className={styles.controls}>
         {Object.keys(Locations).map(key => {
           return (
             <button key={key} onClick={() => handleFlyTo(Locations[key])}>

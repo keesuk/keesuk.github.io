@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 import * as Locations from './Locations';
 import Map from './Map';
 
@@ -19,8 +19,9 @@ const App = () => {
         height="100vh"
         viewState={viewState}
         onViewStateChange={handleChangeViewState}
+        mapStyle="mapbox://styles/keesukee/ck8qzf8td0par1ipce2409uf0"
       />
-      <div className="App">
+      <div className={styles.controls}>
         {Object.keys(Locations).map(key => {
           return (
             <button key={key} onClick={() => handleFlyTo(Locations[key])}>

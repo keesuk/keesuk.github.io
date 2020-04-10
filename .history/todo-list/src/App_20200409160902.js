@@ -1,8 +1,22 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
+import Navigation from './Navigation';
 import * as Locations from './Locations';
 import Map from './Map';
 
+const LINKS = [
+  { label: 'Website', to: 'https://www.robinwieruch.de/' },
+  { label: 'Twitter', to: 'https://twitter.com/rwieruch' },
+];
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navigation links={LINKS} />
+      </div>
+    );
+  }
+}
 
 const App = () => {
   const [viewState, setViewState] = React.useState(Locations.coolidge)
@@ -20,7 +34,7 @@ const App = () => {
         viewState={viewState}
         onViewStateChange={handleChangeViewState}
       />
-      <div className="App">
+      <div className={styles.controls}>
         {Object.keys(Locations).map(key => {
           return (
             <button key={key} onClick={() => handleFlyTo(Locations[key])}>

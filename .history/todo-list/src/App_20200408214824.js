@@ -1,17 +1,11 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 import * as Locations from './Locations';
 import Map from './Map';
-
 
 const App = () => {
   const [viewState, setViewState] = React.useState(Locations.coolidge)
   const handleChangeViewState = ({ viewState }) => setViewState(viewState)
-
-  const handleFlyTo = destination => {
-    setViewState({ ...viewState, ...destination });
-  }
-
   return (
     <div>
       <Map
@@ -20,17 +14,23 @@ const App = () => {
         viewState={viewState}
         onViewStateChange={handleChangeViewState}
       />
-      <div className="App">
+      <div className={styles.controls}>
         {Object.keys(Locations).map(key => {
-          return (
-            <button key={key} onClick={() => handleFlyTo(Locations[key])}>
-              {key}
-            </button>
-          );
-        })}
+          return <button key={key} onClick={undefined}>
+            {key}
+          </button>
+        })};
       </div>
     </div>
   );
 };
 
-export default App;
+export default function App() {
+  return (
+    <div>
+      <ReactMapGl
+        {...viewport}
+        mapboxApitAccessToken={process.env.REACT_}
+    </div>
+  )
+};
