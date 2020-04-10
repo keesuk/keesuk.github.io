@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Locations from './Locations';
 import Map from './Map';
-import styles from 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 
 const App = () => {

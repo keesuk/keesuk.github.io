@@ -1,7 +1,7 @@
 import React from 'react';
+import './App.css';
 import * as Locations from './Locations';
 import Map from './Map';
-import styles from 'mapbox-gl/dist/mapbox-gl.css';
 
 
 const App = () => {
@@ -13,14 +13,14 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <div>
       <Map
         width="100vw"
         height="100vh"
         viewState={viewState}
         onViewStateChange={handleChangeViewState}
       />
-      <div className={styles.controls}>
+      <div className="App">
         {Object.keys(Locations).map(key => {
           return (
             <button key={key} onClick={() => handleFlyTo(Locations[key])}>
