@@ -159,8 +159,8 @@ export const 영등포 = {
 };
 
 export const 용산 = {
-    longitude: 126.99,
-    latitude: 37.5323,
+    longitude: 126.97088,
+    latitude: 37.5541369,
     zoom: 10,
     pitch: 0,
     bearing: 0,
@@ -175,24 +175,24 @@ export const 은평 = {
 };
 
 export const 종로 = {
-    longitude: 126.9772401,
-    latitude: 37.5702103,
+    longitude: 126.97088,
+    latitude: 37.5541369,
     zoom: 10,
     pitch: 0,
     bearing: 0,
 };
 
 export const 중구 = {
-    longitude: 126.9975097,
-    latitude: 37.5636559,
+    longitude: 126.97088,
+    latitude: 37.5541369,
     zoom: 10,
     pitch: 0,
     bearing: 0,
 };
 
 export const 중랑 = {
-    longitude: 127.0763183,
-    latitude: 37.5949548,
+    longitude: 126.97088,
+    latitude: 37.5541369,
     zoom: 10,
     pitch: 0,
     bearing: 0,
