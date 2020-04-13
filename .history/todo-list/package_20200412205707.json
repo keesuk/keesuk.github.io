@@ -1,0 +1,74 @@
+{
+  "name": "todo-list",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.9.2",
+    "@babel/runtime-corejs3": "^7.9.2",
+    "@math.gl/web-mercator": "^3.1.3",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.2",
+    "@testing-library/user-event": "^10.0.1",
+    "@turf/helpers": "^6.1.4",
+    "@webpack-cli/update": "^0.1.8",
+    "browserify-css": "^0.15.0",
+    "bufferutil": "^4.0.1",
+    "core-js": "^3.6.5",
+    "d3": "^5.15.1",
+    "deck.gl": "^8.1.1",
+    "fibers": "^4.0.2",
+    "hangul-js": "^0.2.6",
+    "inquirer": "^6.5.2",
+    "json": "^9.0.6",
+    "korean-js": "^0.8.1",
+    "math.gl": "^3.1.3",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-d3-library": "^1.1.8",
+    "react-devtools": "^4.6.0",
+    "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.3",
+    "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
+    "remove-webpack-plugin": "^1.2.2",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "utf-8-validate": "^5.0.2",
+    "utf8": "^3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "css-loader": "^3.5.2",
+    "static-site-generator-webpack-plugin": "^3.4.2",
+    "style-loader": "^1.1.3",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

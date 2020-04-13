@@ -1,0 +1,45 @@
+/* make the control panel float on 
+ * top with readable buttons */
+ .controls {
+    position: absolute;
+    z-index: 10000;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .controls > button {
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    margin-bottom: .3em;
+    width: 100%;
+    background-color: yellow;
+    font-weight: bold;
+    border: none;
+    color: black;
+  }
+  
+  .controls > button:hover {
+    background-color: transparent;
+    
+  }
+
+  .controls > button:active {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 !important;
+  }
+
+  .controls > button:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 !important;
+  }
+  

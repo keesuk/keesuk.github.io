@@ -1,0 +1,62 @@
+/* make the control panel float on 
+ * top with readable buttons */
+.title {
+  position: absolute;
+  z-index: 10000;
+  margin: 10px;
+  font-size: 50px;
+  background-color: rgb(255, 123, 0);
+  top: 0;
+  left: 0;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.5px;
+}
+
+ .controls {
+    position: absolute;
+    z-index: 10000;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .controls > button {
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    letter-spacing: -.2px;
+    margin-bottom: .3em;
+    width: 100%;
+    background-color: yellow;
+    font-weight: 600;
+    border: 1px black solid;
+    color: black;
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+  
+  .controls > button:hover {
+    background-color: transparent;
+    
+  }
+
+  .controls > button:active {
+  }
+
+  .controls > button:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 !important;
+  }
+  
